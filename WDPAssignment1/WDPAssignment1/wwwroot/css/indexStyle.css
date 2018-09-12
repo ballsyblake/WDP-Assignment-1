@@ -1,0 +1,63 @@
+﻿body {
+    padding-left: 0px;
+}
+img {
+    width: 650px;
+    height: 500px;
+    
+}
+figure {
+    
+    width: 500px;
+    height: 500px;
+}
+figcaption {
+    background: rgba(128, 128, 128, 0.4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    padding-top: 0%;
+    
+    visibility: hidden;
+}
+
+figure:hover > figcaption {
+    visibility: visible;
+}
+
+.industry1 {
+    height: 600px;
+    background-image: url(../images/industry4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.industry1 h1 {
+    color: white;
+    text-align: center;
+}
+.industry1 h3 {
+        color: white;
+        text-align: center;
+}
+.industry2 {
+    height: 600px;
+    background-image: url(../images/industry41.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.intro {
+    height: 200px;
+    font-size: 36px;
+    text-align: center;
+    padding: 70px;
+}

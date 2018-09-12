@@ -1,17 +1,13 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    
+   
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    
     width: 100%;
 }
-
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -25,7 +21,7 @@
 
 /* QR code generator */
 #qrCode {
-    margin: 15px;
+    
 }
 
 /* Hide/rearrange for smaller screens */
@@ -35,25 +31,7 @@
         display: none;
     }
 }
-.industry1 {
-    height: 600px;
-    background-image: url(../images/industry4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.industry2 {
-    height: 600px;
-    background-image: url(../images/industry41.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 
-.intro {
-    height: 200px;
-    font-size: 36px;
-    text-align: center;
-    padding: 70px;
-}
+
+

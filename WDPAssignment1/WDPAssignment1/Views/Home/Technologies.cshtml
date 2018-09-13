@@ -4,3 +4,350 @@
 @{
     ViewData["Title"] = "Technologies";
 }
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="industry1">
+    <h1>This is the title</h1>
+    <h3>this is the subtitle</h3>
+</div>
+
+
+
+
+
+<div id="elasticGrid"></div>
+
+<!-- Elastic grid -->
+<script type="text/javascript">
+    $(function () {
+        $("#elasticGrid").elastic_grid({
+            'showAllText': 'All',
+            'filterEffect': 'popup',
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 300,
+            'items':
+                [
+                    {
+                        'title': 'IBM',
+                        'description': '<h4>India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!</h4>',
+                        'thumbnail': ['/images/IBM.jpg'],
+                        'large': ['/images/IBM.jpg'],
+                        'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'http://www.ibm.com/watson/', 'new_window': true },
+                            ],
+                        'tags': ['AI']
+                    },
+
+                    {
+                        'title': 'Microsoft',
+                        'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Microsoft.jpg'],
+                        'large': ['/images/Microsoft.jpg'],
+                        'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.microsoft.com/en-us/ai/default.aspx', 'new_window': true },
+                            ],
+                        'tags': ['AI']
+                    },
+
+                    {
+                        'title': 'CSIRO',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/CSIRO.jpg'],
+                        'large': ['/images/CSIRO.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://data61.csiro.au/en/Our-Work/AI-and-Machine-Learning', 'new_window': true },
+                            ],
+                        'tags': ['AI']
+                    },
+
+                    {
+                        'title': 'Amazon',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Amazon.jpg'],
+                        'large': ['/images/Amazon.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/machine-learning/ai-lex-polly-rekognition/', 'new_window': true },
+                            ],
+                        'tags': ['AI']
+                    },
+
+                    {
+                        'title': 'IBM',
+                        //'description': '<h4>India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!</h4>',
+                        'thumbnail': ['/images/IBM.jpg'],
+                        'large': ['/images/IBM.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'http://www.ibm.com/watson/', 'new_window': true },
+                            ],
+                        'tags': ['IoT']
+                    },
+
+                    {
+                        'title': 'Microsoft',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Microsoft.jpg'],
+                        'large': ['/images/Microsoft.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.microsoft.com/en-us/ai/default.aspx', 'new_window': true },
+                            ],
+                        'tags': ['IoT']
+                    },
+
+                    {
+                        'title': 'Amazon <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Amazon.jpg'],
+                        'large': ['/images/Amazon.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/machine-learning/ai-lex-polly-rekognition/', 'new_window': true },
+                            ],
+                        'tags': ['IoT']
+                    },
+
+                    {
+                        'title': 'CIO <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/CIO.jpg'],
+                        'large': ['/images/CIO.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.cio.com.au/article/641518/feds-launch-ai-iot-projects/', 'new_window': true },
+                            ],
+                        'tags': ['IoT']
+                    },
+
+                    {
+                        'title': 'IBM <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!</h4>',
+                        'thumbnail': ['/images/IBM.jpg'],
+                        'large': ['/images/IBM.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'http://www.ibm.com/watson/', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    },
+
+                    {
+                        'title': 'Microsoft <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Microsoft.jpg'],
+                        'large': ['/images/Microsoft.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.microsoft.com/en-us/ai/default.aspx', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    },
+
+                    {
+                        'title': 'Google <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Google.jpg'],
+                        'large': ['/images/Google.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://cloud.google.com/vision/', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    },
+
+                    {
+                        'title': 'Forbes <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Forbes.jpg'],
+                        'large': ['/images/Forbes.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/bernardmarr/2016/03/23/what-everyone-should-know-about-cognitive-computing/#62c3c5885088', 'new_window': true },
+                            ],
+                        'tags': ['Cognitive Services']
+                    },
+
+                    {
+                        'title': 'Google <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Google.jpg'],
+                        'large': ['/images/Google.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://cloud.google.com/vision/', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    },
+
+                    {
+                        'title': 'Microsoft <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Microsoft.jpg'],
+                        'large': ['/images/Microsoft.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.microsoft.com/en-us/ai/default.aspx', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    },
+
+                    {
+                        'title': 'IBM <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!</h4>',
+                        'thumbnail': ['/images/IBM.jpg'],
+                        'large': ['/images/IBM.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'http://www.ibm.com/watson/', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    },
+
+                    {
+                        'title': 'Amazon <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Amazon.jpg'],
+                        'large': ['/images/Amazon.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://aws.amazon.com/machine-learning/ai-lex-polly-rekognition/', 'new_window': true },
+                            ],
+                        'tags': ['Cloud Computing']
+                    },
+
+                    {
+                        'title': 'Forbes <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Forbes.jpg'],
+                        'large': ['/images/Forbes.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/bernardmarr/2016/03/23/what-everyone-should-know-about-cognitive-computing/#62c3c5885088', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    },
+
+                    {
+                        'title': 'ZDNet <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/ZDNet.jpg'],
+                        'large': ['/images/ZDNet.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.zdnet.com/article/robotics-and-industry-4-0/', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    },
+
+                    {
+                        'title': 'I-Scoop Robots Cobots <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/ISRC.jpg'],
+                        'large': ['/images/ISRC.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.i-scoop.eu/robots-cobots-logistics-4-0/', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    },
+
+                    {
+                        'title': 'Automation World <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/AW.jpg'],
+                        'large': ['/images/AW.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.automationworld.com/industry-40-here-are-you-ready', 'new_window': true },
+                            ],
+                        'tags': ['Robotics']
+                    },
+
+                    {
+                        'title': 'BlockChain <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!</h4>',
+                        'thumbnail': ['/images/BlockChain.jpg'],
+                        'large': ['/images/BlockChain.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.blockchain.com/', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    },
+
+                    {
+                        'title': 'PC Magazine <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/PCM.jpg'],
+                        'large': ['/images/PCM.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://au.pcmag.com/amazon-web-services/46389/feature/blockchain-the-invisible-technology-thats-changing-the-world', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    },
+
+                    {
+                        'title': 'Forbes <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/Forbes.jpg'],
+                        'large': ['/images/Forbes.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://www.forbes.com/sites/bernardmarr/2016/03/23/what-everyone-should-know-about-cognitive-computing/#62c3c5885088', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    },
+
+                    {
+                        'title': 'CSIRO <hr/> <a class="btn btn-primary">More Details</a>',
+                        //'description': '<h4>A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.</h4>',
+                        'thumbnail': ['/images/CSIRO.jpg'],
+                        'large': ['/images/CSIRO.jpg'],
+                        //'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2', 'jquery elastic grid 3', 'jquery elastic grid 4', 'jquery elastic grid 5'],
+                        'button_list':
+                            [
+                                { 'title': 'Visit Website', 'url': 'https://data61.csiro.au/en/Our-Work/AI-and-Machine-Learning', 'new_window': true },
+                            ],
+                        'tags': ['Blockchains']
+                    },
+                ]
+
+        });
+    });
+</script>
+
+
+
+<div><h1>Feedback</h1></div>
+

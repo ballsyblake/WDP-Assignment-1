@@ -5,6 +5,12 @@
     ViewData["Title"] = "Map";
 }
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCOuyWGluU9IiyN3HkVR1kN9lo4CJpAk1w"></script>
+
+<div class="industry1">
+    <h1>This is the title</h1>
+    <h3>this is the subtitle</h3>
+</div>
+
 <script>
     // Declare a variable for map
     var map;
@@ -26,12 +32,12 @@
             document.getElementById("googleMap"), canberraMap);
 
         // Add markers below this line
-        addDIIS(map);
-        addAmazon(map);
-        addIBM(map);
-        addMicrosoft(map);
-        addGoogle(map);
-        addCSIRO(map);
+        addDIIS(map); //-35.281777, 149.134067
+        addAmazon(map); //47.622348, -122.336087
+        addIBM(map); //41.113576, -73.716052
+        addMicrosoft(map); //47.642337, -122.136932
+        addGoogle(map); //37.422243, -122.084039
+        addCSIRO(map); //-35.277700, 149.118521
 
     }
     // Add other functions below this line
@@ -44,45 +50,155 @@
 
         markerDIIS.setMap(map);
 
+        var contentDIIS =
+            ' <h1>Department of Industry Innovation and Science</h1>' +
+            ' <img src="../images/DIIS.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b> Department of Industry Innovation and Science</b> is a department of the Australian Government responsible for consolidating the Government\'s efforts to drive economic growth, productivity and competitiveness by bringing together industry, energy, resources and science.<br>' +
+            '<a href="https://www.industry.gov.au/">DIIS Website</a>' +
+            ' </p>';
+
         var infoDIIS = new google.maps.InfoWindow({
-            content: "Canberra Centre"
+            content: contentDIIS
         });
 
-        google.maps.event.addListener(markerCanberraCentre, 'click', function () {
-            infoCanberraCentre.open(map, markerCanberraCentre);
+        google.maps.event.addListener(markerDIIS, 'click', function () {
+            infoDIIS.open(map, markerDIIS);
         });
     }
 
     function addAmazon(map) {
         // Canberra Museum and Gallery
-        var Amazon =
-            new google.maps.LatLng(-35.2818211, 149.1289204);
+        var Amazon = new google.maps.LatLng(47.622348, -122.336087);
         var markerAmazon = new google.maps.Marker({
             position: Amazon,
         });
 
         markerAmazon.setMap(map);
 
-        var contentCanberraMuseumGallery =
-            ' <h1>Canberra Museum and Gallery</h1>' +
-            ' <img src="../images/CBRMuseumGallery.jpg" ' +
+        var contentAmazon =
+            ' <h1>Amazon</h1>' +
+            ' <img src="../images/Amazon.jpg" ' +
             '      style="float:left; width:25%; margin-right:10px;">' +
-            ' <p><b>Canberra Museum and Gallery</b> is an art gallery ' +
-            'and museum in Canberra, the capital of Australia. ' +
-            'It is located on London Circuit, in Civic in ' +
-            'the centre of the city. The gallery was opened ' +
-            'on 13 February, 1998.<br>' +
-            '<a href="https://en.wikipedia.org/wiki/Canberra_' +
-            'Museum_and_Gallery">Wikipedia</a>' +
+            ' <p><b> Amazon </b> is an American electronic commerce and cloud computing company based in Seattle, Washington, that was founded by Jeff Bezos on July 5, 1994.<br>' +
+            '<a href="https://www.amazon.com.au/">Amazon Website</a>' +
             ' </p>';
 
         var infoAmazon = new google.maps.InfoWindow({
-            content: contentCanberraMuseumGallery
+            content: contentAmazon
         });
 
-        google.maps.event.addListener(markerCanberraMuseumGallery, 'click',
+        google.maps.event.addListener(markerAmazon, 'click',
             function () {
-                infoCanberraMuseumGallery.open(map, markerCanberraMuseumGallery);
+                infoAmazon.open(map, markerAmazon);
+            });
+    }
+
+    function addIBM(map) {
+        // Canberra Museum and Gallery
+        var IBM = new google.maps.LatLng(41.113576, -73.716052);
+        var markerIBM = new google.maps.Marker({
+            position: IBM,
+        });
+
+        markerIBM.setMap(map);
+
+        var contentIBM =
+            ' <h1>IBM</h1>' +
+            ' <img src="../images/IBM.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b> IBM</b> is an American multinational technology company headquartered in Armonk, New York, United States, with operations in over 170 countries.<br>' +
+            '<a href="https://www.ibm.com/">IBM Website</a>' +
+            ' </p>';
+
+        var infoIBM = new google.maps.InfoWindow({
+            content: contentIBM
+        });
+
+        google.maps.event.addListener(markerIBM, 'click',
+            function () {
+                infoIBM.open(map, markerIBM);
+            });
+    }
+
+    function addMicrosoft(map) {
+        // Canberra Museum and Gallery
+        var Microsoft = new google.maps.LatLng(47.642337, -122.136932);
+        var markerMicrosoft = new google.maps.Marker({
+            position: Microsoft,
+        });
+
+        markerMicrosoft.setMap(map);
+
+        var contentMicrosoft =
+            ' <h1>Microsoft</h1>' +
+            ' <img src="../images/Microsoft.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b> Microsoft</b> is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports and sells computer software, consumer electronics, personal computers, and related services. Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.<br>' +
+            '<a href="https://www.microsoft.com/en-au/"> Microsoft Website</a>' +
+            ' </p>';
+
+        var infoMicrosoft = new google.maps.InfoWindow({
+            content: contentMicrosoft
+        });
+
+        google.maps.event.addListener(markerMicrosoft, 'click',
+            function () {
+                infoMicrosoft.open(map, markerMicrosoft);
+            });
+    }
+
+    function addGoogle(map) {
+        // Canberra Museum and Gallery
+        var Google = new google.maps.LatLng(37.422243, -122.084039);
+        var markerGoogle = new google.maps.Marker({
+            position: Google,
+        });
+
+        markerGoogle.setMap(map);
+
+        var contentGoogle =
+            ' <h1>Google</h1>' +
+            ' <img src="../images/Google.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b> Google </b> is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware.<br>' +
+            '<a href="https://www.google.com/"> Google Website</a>' +
+            ' </p>';
+
+        var infoGoogle = new google.maps.InfoWindow({
+            content: contentGoogle
+        });
+
+        google.maps.event.addListener(markerGoogle, 'click',
+            function () {
+                infoGoogle.open(map, markerGoogle);
+            });
+    }
+
+    function addCSIRO(map) {
+        // Canberra Museum and Gallery
+        var CSIRO = new google.maps.LatLng(-35.277700, 149.118521);
+        var markerCSIRO = new google.maps.Marker({
+            position: CSIRO,
+        });
+
+        markerCSIRO.setMap(map);
+
+        var contentCSIRO =
+            ' <h1>Commonwealth Scientific and Industrial Research Organisation</h1>' +
+            ' <img src="../images/CSIRO.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p><b> Commonwealth Scientific and Industrial Research Organisation</b> is an independent Australian federal government agency responsible for scientific research. Its chief role is to improve the economic and social performance of industry for the benefit of the community.<br>' +
+            '<a href="https://www.csiro.au/"> CSIRO Website</a>' +
+            ' </p>';
+
+        var infoCSIRO = new google.maps.InfoWindow({
+            content: contentCSIRO
+        });
+
+        google.maps.event.addListener(markerCSIRO, 'click',
+            function () {
+                infoCSIRO.open(map, markerCSIRO);
             });
     }
 
@@ -93,3 +209,4 @@
 
 @* The div element below is to display Google Map*@
 <div id="googleMap" style="width:100%;height:800px;"></div>
+<div><h1>Feedback</h1></div>

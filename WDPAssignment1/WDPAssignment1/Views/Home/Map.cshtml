@@ -6,22 +6,22 @@
 }
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCOuyWGluU9IiyN3HkVR1kN9lo4CJpAk1w"></script>
 
-<div class="industry1">
-    <h1>This is the title</h1>
-    <h3>this is the subtitle</h3>
+<div class="introTec" style="background-image: url('../images/map.jpg');">
+    <h1>Map of Company Locations</h1>
+    <h2>The Headquarters of Six World Leading Companies in Technology</h2>
 </div>
 
 <script>
     // Declare a variable for map
     var map;
     // Get lattitude and longitude of Canberra Centre
-    var canberraCentre = new google.maps.LatLng(-35.2792284, 149.1321033);
+    var canberraCentre = new google.maps.LatLng(51.5073509, -0.1277583);
     // Initialise the map
     function initMap() {
         // Define the properties for Canberra Centre map
         var canberraMap = {
             center: canberraCentre,
-            zoom: 15,
+            zoom: 2,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 

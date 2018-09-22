@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" type="text/css" />
         <link rel="stylesheet" href="~/css/indexStyle.css" type="text/css" />
-        <link rel="stylesheet" href="~/css/elastic_grid.min.css" type="text/css" />
+        <link rel="stylesheet" href="~/css/elastic-grid.min.css" type="text/css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -42,82 +42,39 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div id="region-footer-main" class="col-md-9">
-                    </div>
-                    <div id="region-footer-minor" class="col-md-3">
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="region-footer-lower">
-                        <a id="footer-navigation" class="element-invisible" tabindex="-1">Main navigation, at the bottom of the page</a>
-                        <h2><a href="#" id="footer-nav-link" title="Show or hide the website's main menu"><span>Show</span> main menu</a></h2>
-                        <div id="footer-nav-wrapper">
-                            <div id="footer_first" role="navigation">
-                                <nav class="col-md-3" id="footer-follow-links">
-                                    <div class="entity entity-bean bean-admin-template-elements default clearfix" about="/block/follow-us---footer" typeof="">
+        <footer style="background-color:darkcyan;">
+            <div class="row" style="padding: 5px;">
+                <div class="col-lg-6 col-md-6 col-sm-6"><h2>Page Links</h2></div>
+                <div class="col-lg-6 col-md-6 col-sm-6"><h2 style="text-align:right; padding-right:5%;">Social Media Links</h2></div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
 
-                                        <div class="content">
-                                            <div class="field field-name-field-body field-type-text-with-summary field-label-hidden">
-                                                <div class="field-items">
-                                                    <div class="field-item even">
-                                                        <strong>Follow us</strong>
-                                                        <ul>
-                                                            <li><a href="https://plus.google.com/+IndustryGovAu" title="Follow us on Google Plus" aria-label="Follow us on Google Plus"><span class="sr-only">Follow us on Google+</span><svg focusable="false" class="svg-inline--fa fa-google-plus-g fa-w-24" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="google-plus-g" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path></svg></a></li>
-                                                            <li><a href="https://www.youtube.com/user/InnovationGovAu" title="Follow us on YouTube" aria-label="Follow us on YouTube"><span class="sr-only">Follow us on Youtube</span><svg focusable="false" class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a></li>
-                                                            <li><a href="https://twitter.com/IndustryGovAu" title="Follow us on Twitter" aria-label="Follow us on Twitter"><span class="sr-only">Follow us on Twitter</span><svg focusable="false" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li>
-                                                            <li><a href="https://www.linkedin.com/company/department-of-innovation-industry-science-and-research" title="Follow us on LinkedIn" aria-label="Follow us on LinkedIn"><span class="sr-only">Follow us on LinkedIn</span><svg focusable="false" class="svg-inline--fa fa-linkedin-in fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></a></li>
-                                                            <li><a href="/our-rss-feeds" title="Subscribe to our RSS feeds" aria-label="Subscribe to our RSS feeds"><span class="sr-only">Subscribe to our RSS feeds</span><svg focusable="false" class="svg-inline--fas fa-rss fa-w-16" aria-hidden="true" data-fa-i2svg="" data-prefix="fab" data-icon="rss" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path></svg></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </nav>
-                                <nav class="col-sm-6 col-md-3">
-                                    <div class="menu-block-wrapper menu-block-9 menu-name-menu-footer-sub-menu parent-mlid-12026 menu-level-1">
-                                        <ul class="menu">
-                                            <li class="first leaf menu-mlid-11301"><a href="/topic/about-us">About us</a></li>
-                                            <li class="leaf menu-mlid-11306"><a href="/about-us/contact-us">Contact us</a></li>
-                                            <li class="leaf menu-mlid-11311"><a href="/about-us/work-with-us">Jobs</a></li>
-                                            <li class="last leaf menu-mlid-12021"><a href="/about-us/contact-us">Media</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <nav class="col-sm-6 col-md-3">
-                                    <div class="menu-block-wrapper menu-block-10 menu-name-menu-footer-sub-menu parent-mlid-12031 menu-level-1">
-                                        <ul class="menu">
-                                            <li class="first leaf menu-mlid-11316"><a href="http://minister.industry.gov.au/">Ministers</a></li>
-                                            <li class="leaf menu-mlid-11321"><a href="/accessibility">Accessibility</a></li>
-                                            <li class="leaf menu-mlid-93206"><a href="/privacy">Privacy</a></li>
-                                            <li class="last leaf menu-mlid-93211"><a href="/disclaimer">Disclaimer</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <nav class="col-sm-6 col-md-3">
-                                    <div class="menu-block-wrapper menu-block-11 menu-name-menu-footer-sub-menu parent-mlid-12036 menu-level-1">
-                                        <ul class="menu">
-                                            <li class="first leaf menu-mlid-93216"><a href="/copyright">Copyright</a></li>
-                                            <li class="last leaf menu-mlid-11341"><a href="/about-us/what-we-do/freedom-of-information">Freedom of information</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                            <hr>
-                            <div id="footer-nav-wrap" aria-described-by="footer-desc">
-                                <span id="footer-desc" class="sr-only">This menu is a copy of the website's main menu, which can be found at the top of every page</span>
-                                <hr />
-                            </div>
-                        </div>
-                    </div>
+                    <ul style="list-style-type:none;">
+                        <li><a href="/Home" style="text-shadow:none; color:black">Home</a></li>
+                        <li><a href="/Home/Organisations" style="text-shadow:none; color:black">Organisations and Companies</a></li>
+                        <li><a href="/Home/Technologies" style="text-shadow:none; color:black">Emerging Technologies</a></li>
+                    </ul>
+
+
+
                 </div>
-                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <ul style="list-style-type:none;">
+                        <li><a href="/Home/Map" style="text-shadow:none; color:black">World Map</a></li>
+                        <li><a href="/Home/About" style="text-shadow:none; color:black">Contact and About</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4" style="text-align: right; padding-right:3%;">
+                    
+                    <a href="https://www.facebook.com" style="padding:5px;"><img src="~/images/facebook.png" width="50" height="50"></a>
+                    <a href="https://www.twitter.com"style="padding:5px;"><img src="~/images/twitter.png" width="50" height="50"></a>
+                    <a href="https://www.instagram.com"style="padding:5px;"><img src="~/images/instagram.png" width="50" height="50"></a>
+                    <a href="https://plus.google.com/"style="padding:5px;"><img src="~/images/googleplus.png" width="50" height="50"></a>
+                </div>
             </div>
         </footer>
     </div>
